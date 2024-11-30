@@ -1,0 +1,8 @@
+footer {
+  height: 40px;
+  background-color: var(--color-blue);
+  box-shadow: inset 0px 1px 0px #3168d5, inset 0px 2px 0px #3888e9,
+    inset 0px 3px 0px #4993e6, inset 0px 4px 0px #307be5,
+    inset 0px 5px 0px #286add, inset 0px -1px 0px #1941a5,
+    inset 0px -2px 0px #1e50c4, inset 0px -2px 0px #235bd9;
+}
