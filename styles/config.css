@@ -12,3 +12,7 @@
   --color-green: #3a943a;
   --color-white: #fff;
 }
+
+button {
+  all: unset;
+}

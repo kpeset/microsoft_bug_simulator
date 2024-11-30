@@ -1,5 +1,3 @@
-console.log("test");
-
 const body = document.body;
 
 const displayStructure = () => {
@@ -37,18 +35,29 @@ const displayCookie = () => {
   const header = document.createElement("div");
   const headerText = document.createElement("p");
   const content = document.createElement("div");
-  const lorem = document.createElement("p");
+  const typeError = document.createElement("div");
+  const message = document.createElement("p");
+  const crossErrorImg = document.createElement("img");
+  const button = document.createElement("button");
+
+  crossErrorImg.src = "../img/crosserror.png";
+
   cookie.classList.add("cookie");
   header.classList.add("header");
   content.classList.add("content");
+  typeError.classList.add("type_error");
   headerText.textContent = "C:\\WINDOWS\\SYSTEM32\\COOKIE.EXE";
-  lorem.textContent =
+  message.textContent =
     "C:\\WINDOWS\\SYSTEM32\\COOKIE.EXE is not a valid Win32 application.";
+  button.textContent = "OK";
   cookie.appendChild(header);
   section.appendChild(cookie);
   header.appendChild(headerText);
   cookie.appendChild(content);
-  content.appendChild(lorem);
+  content.appendChild(typeError);
+  typeError.appendChild(crossErrorImg);
+  typeError.appendChild(message);
+  content.appendChild(button);
 };
 
 const displayFooterDetails = () => {
