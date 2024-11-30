@@ -6,3 +6,34 @@ footer {
     inset 0px 5px 0px #286add, inset 0px -1px 0px #1941a5,
     inset 0px -2px 0px #1e50c4, inset 0px -2px 0px #235bd9;
 }
+
+footer > .start {
+  padding-left: 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+  border-radius: 0px 12px 12px 0px;
+  height: 100%;
+  width: 184px;
+  background-color: var(--color-green);
+  box-shadow: inset 0px 1px 0px #3b7c3b, inset 0px 2px 0px #5fa15f,
+    inset 0px 3px 0px #8ec08b, inset 0px 4px 0px #89bc8a,
+    inset 0px 5px 0px #78b379, inset 0px 6px 0px #67ac67,
+    inset 0px 7px 0px #57a458, inset 0px -1px 0px #2c7339,
+    inset 0px -2px 0px #358335, 1px 0px 0px #287828, 2px 0px 0px #206b20,
+    3px 0px 0px #1f611f, 4px 0px 0px #115638, 5px 0px 0px #286ae0;
+}
+footer > .start > img {
+  height: 24px;
+  filter: drop-shadow(4px 4px 4px #3b3b3b);
+}
+
+footer > .start > p {
+  color: var(--color-white);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 40;
+  text-shadow: 4px 2px 2px #535353;
+  cursor: default;
+}

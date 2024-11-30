@@ -38,7 +38,21 @@ const displayShoppingSection = () => {
   main[0].appendChild(section);
 };
 
+const displayFooterDetails = () => {
+  const footer = document.getElementsByTagName("footer");
+  const start = document.createElement("div");
+  const text = document.createElement("p");
+  const logo = document.createElement("img");
+  logo.src = "../img/logo.png";
+  text.innerText = "démarrer";
+  start.classList.add("start");
+  footer[0].appendChild(start);
+  start.appendChild(logo);
+  start.appendChild(text);
+};
+
 displayStructure();
+displayFooterDetails();
 displayTitle();
 displayCookieSection();
 displayPowerSection();
