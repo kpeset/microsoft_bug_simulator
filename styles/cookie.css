@@ -1,0 +1,18 @@
+.cookie_section {
+  padding: 80px;
+}
+
+.cookie_section > .cookie > .header {
+  border-radius: 8px 8px 0px 0px;
+  color: var(--color-white);
+  padding: 16px 8px;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 107, 253, 1) 0%,
+    rgba(0, 85, 227, 1) 100%
+  );
+}
+
+.cookie_section > .cookie > .content {
+  background-color: #ebe9d8;
+}

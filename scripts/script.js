@@ -10,13 +10,6 @@ const displayStructure = () => {
   body.appendChild(footer);
 };
 
-const displayTitle = () => {
-  const header = document.getElementsByTagName("header");
-  const title = document.createElement("h1");
-  title.innerText = "Microsoft Bug Simulator";
-  header[0].appendChild(title);
-};
-
 const displayCookieSection = () => {
   const main = document.getElementsByTagName("main");
   const section = document.createElement("section");
@@ -38,6 +31,26 @@ const displayShoppingSection = () => {
   main[0].appendChild(section);
 };
 
+const displayCookie = () => {
+  const section = document.querySelector(".cookie_section");
+  const cookie = document.createElement("div");
+  const header = document.createElement("div");
+  const headerText = document.createElement("p");
+  const content = document.createElement("div");
+  const lorem = document.createElement("p");
+  cookie.classList.add("cookie");
+  header.classList.add("header");
+  content.classList.add("content");
+  headerText.textContent = "C:\\WINDOWS\\SYSTEM32\\COOKIE.EXE";
+  lorem.textContent =
+    "C:\\WINDOWS\\SYSTEM32\\COOKIE.EXE is not a valid Win32 application.";
+  cookie.appendChild(header);
+  section.appendChild(cookie);
+  header.appendChild(headerText);
+  cookie.appendChild(content);
+  content.appendChild(lorem);
+};
+
 const displayFooterDetails = () => {
   const footer = document.getElementsByTagName("footer");
   const start = document.createElement("div");
@@ -53,7 +66,7 @@ const displayFooterDetails = () => {
 
 displayStructure();
 displayFooterDetails();
-displayTitle();
 displayCookieSection();
 displayPowerSection();
 displayShoppingSection();
+displayCookie();
