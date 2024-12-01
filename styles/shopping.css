@@ -1,0 +1,24 @@
+.icons_section {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 720px;
+}
+
+.icons_section > div > img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+
+.icons_section > div > p {
+  color: white;
+  text-shadow: 2px 1px 2px #000000;
+  cursor: default;
+}
+
+.left {
+  min-width: 50%;
+}

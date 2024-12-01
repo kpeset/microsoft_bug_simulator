@@ -16,3 +16,7 @@
 button {
   all: unset;
 }
+
+p {
+  cursor: default;
+}
