@@ -7,9 +7,12 @@
 }
 
 .cookie_section > .cookie > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 8px 8px 0px 0px;
   color: var(--color-white);
-  padding: 12px 12px;
+  padding: 8px 8px 4px 12px;
   background: linear-gradient(
     0deg,
     rgba(1, 107, 253, 1) 0%,
@@ -59,4 +62,41 @@
 }
 .cookie_section > .cookie > .content > button:active {
   background-color: #d8d6c6;
+}
+
+.close_button {
+  background-color: #dc3804;
+  background: linear-gradient(
+    305deg,
+    rgba(172, 56, 25, 1) 0%,
+    rgba(246, 113, 79, 1) 100%
+  );
+
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 1px #b55e54, 0px 0px 0px 2px #fff;
+  border-radius: 2px;
+}
+
+.close_button > span > .right_line {
+  height: 16px;
+  width: 3px;
+  background-color: var(--color-white);
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.close_button > span > .left_line {
+  height: 16px;
+  width: 3px;
+  background-color: var(--color-white);
+  transform: rotate(-45deg);
+}
+
+.close_button > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
