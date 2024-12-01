@@ -1,0 +1,24 @@
+.terminal_section {
+  display: flex;
+  height: 100%;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.terminal > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #000000;
+  padding: 24px 16px;
+  box-shadow: inset -1px -1px 0px #001492, inset -2px -2px 0px #0020a9,
+    inset -3px -3px 0px #1b3ca3, inset 1px 1px 0px #003ad0,
+    inset 2px 2px 0px #2962e3, inset 3px 3px 0px #2054a7;
+
+  color: rgba(255, 255, 255, 0.662);
+  flex: 1; /* Fait en sorte que la partie noire occupe l'espace restant */
+}

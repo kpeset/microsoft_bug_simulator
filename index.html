@@ -8,33 +8,59 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
     <link rel="stylesheet" href="/styles/cookie.css" />
+    <link rel="stylesheet" href="/styles/terminal.css" />
   </head>
   <body>
     <main>
-      <section class="cookie_section">
-        <div class="cookie">
-          <div class="header">
-            <p>C:\WINDOWS\SYSTEM32\COOKIE.EXE</p>
-            <div class="close_button">
-              <span>
-                <div class="right_line"></div>
-                <div class="left_line"></div>
-              </span>
+      <div class="left">
+        <!-- COOKIE SECTION -->
+        <section class="cookie_section">
+          <div class="cookie">
+            <div class="header">
+              <p>C:\WINDOWS\SYSTEM32\COOKIE.EXE</p>
+              <div class="close_button">
+                <span>
+                  <div class="right_line"></div>
+                  <div class="left_line"></div>
+                </span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="type_error">
+                <img src="../img/crosserror.png" />
+                <p>
+                  C:\WINDOWS\SYSTEM32\COOKIE.EXE is not a valid Win32
+                  application.
+                </p>
+              </div>
+              <button class="cookie_button">OK</button>
             </div>
           </div>
-          <div class="content">
-            <div class="type_error">
-              <img src="../img/crosserror.png" />
+        </section>
+        <!-- ICONS SECTION -->
+        <section class="icons_section">ICONS</section>
+      </div>
+      <div class="right">
+        <!-- TERMINAL SECTION -->
+        <section class="terminal_section">
+          <div class="terminal">
+            <div class="header">
+              <p>result.exe</p>
+              <div class="close_button">
+                <span>
+                  <div class="right_line"></div>
+                  <div class="left_line"></div>
+                </span>
+              </div>
+            </div>
+            <div class="content terminal_content">
               <p>
                 C:\WINDOWS\SYSTEM32\COOKIE.EXE is not a valid Win32 application.
               </p>
             </div>
-            <button>OK</button>
           </div>
-        </div>
-      </section>
-      <section class="power_section"></section>
-      <section class="shopping_section"></section>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="start">
@@ -42,5 +68,6 @@
         <p>démarrer</p>
       </div>
     </footer>
+    <script src="./scripts/cookie.js"></script>
   </body>
 </html>

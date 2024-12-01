@@ -1,7 +1,7 @@
 main {
   height: calc(100vh - 40px);
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
@@ -10,13 +10,7 @@ main {
   background-position: left;
 }
 
-main > section {
-  background-color: rgba(255, 255, 255, 0);
-}
-main > section:nth-child(2) {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-main > section:nth-child(3) {
-  background-color: rgba(255, 255, 255, 0);
+.right {
+  padding: 40px;
+  width: 100%;
 }
