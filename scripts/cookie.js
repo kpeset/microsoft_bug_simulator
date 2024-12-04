@@ -198,7 +198,7 @@ const displayIcons = () => {
     icon.classList.add("cta_icon");
     icon.setAttribute("price", article.price);
     icon.setAttribute("effect", article.effect);
-    imgIcon.src = "../img/icons/" + article.icons;
+    imgIcon.src = "../docs/assets/img/icons/" + article.icons;
     titleIcon.textContent = article.title;
     icon.appendChild(imgIcon);
     icon.appendChild(titleIcon);
